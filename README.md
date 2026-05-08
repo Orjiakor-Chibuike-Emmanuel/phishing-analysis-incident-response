@@ -5,19 +5,29 @@ Conducted a full SOC-style investigation on a sophisticated phishing email imper
 
 **Tools Used**
 - VirusTotal
-- MXToolbox (DMARC/SPF check)
+- MXToolbox (DMARC/SPF Analysis)
 - WHOIS Lookup
 - urlscan.io & TinyURL Preview
 
 **Key Findings**
-- Sender domain `libreriacies.es` belongs to a legitimate Spanish bookstore (compromised)
-- No DMARC record found → enabled email spoofing
-- Shortened URL (`tinyurl.com/ypu5kfts`) was terminated by TinyURL for abuse and flagged as malicious by 5 security vendors
+- Sender domain `libreriacies.es` belongs to a legitimate Spanish bookstore that was compromised.
+- No DMARC record found (weak email authentication).
+- Shortened URL (`tinyurl.com/ypu5kfts`) was terminated by TinyURL for abuse and flagged as malicious by 5/95 security vendors.
+
+**Screenshots**
+
+![Suspicious Phishing Email](phishing-email.png)
+
+![VirusTotal URL Analysis](virustotal-result.png)
+
+![TinyURL Terminated Page](tinyurl-terminated.png)
+
+![Domain Investigation](whois-libreriacies.png)
 
 **Skills Demonstrated**
-- IOC extraction
-- Domain reputation analysis
-- Safe URL investigation
-- Social engineering recognition
+- IOC Extraction
+- Domain Reputation Analysis
+- Safe URL Investigation
+- Social Engineering Recognition
 
-**Conclusion**: Confirmed phishing attempt with clear indicators of impersonation and credential harvesting intent.
+**Conclusion**: Confirmed this as a clear phishing attempt using impersonation and urgency tactics.

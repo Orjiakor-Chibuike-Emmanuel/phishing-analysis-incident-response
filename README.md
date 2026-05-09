@@ -18,11 +18,9 @@ Conducted a full SOC-style investigation on a sophisticated phishing email imper
 
 ![Suspicious Phishing Email](phishing-email.png)
 
-![VirusTotal URL Analysis](virustotal-result.png)
+![VirusTotal Analysis Result](virustotal-result.png)
 
 ![TinyURL Terminated Page](tinyurl-terminated.png)
-
-![Domain Investigation](whois-libreriacies.png)
 
 **Skills Demonstrated**
 - IOC Extraction
